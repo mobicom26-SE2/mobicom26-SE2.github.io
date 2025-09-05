@@ -3,10 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="Demo website for SE^2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>A Self-Exploring and Self-Evolving Multi-Agent Paradigm for Adaptive AIoT Program Synthesis</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -39,48 +38,16 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+blockquote .quote-line {
+  border: none;              /* remove default style */
+  border-top: 2px solid gray; /* set thickness + color */
+  margin: 0.5em 0;           /* adjust spacing */
+}
+</style>
 </head>
 <body>
-
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
 
 
 <section class="hero">
@@ -88,86 +55,15 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">A Self-Exploring and Self-Evolving Multi-Agent Paradigm for Adaptive AIoT Program Synthesis</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              Anonymous Author(s) &nbsp; &nbsp; &nbsp; &nbsp; Paper ID: #906
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
-            </div>
-
+            <span class="author-block" style="color: red">We will open-source our project and participate in <b>artifact evaluation</b> once the paper gets accepted.</span>
           </div>
         </div>
       </div>
@@ -177,74 +73,11 @@
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
+    <div class="hero-body is-centered">
+      <img src="./static/images/teaser.gif"/>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        <span class="dnerf">The overall workflow of SE<sup>2</sup> (the step 3 in the agentic workflow is being dynamically constructed)</span>
       </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -258,48 +91,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Large Language Models (LLMs) exhibit powerful code generation capabilities and foster agentic systems to automatically develop various AIoT applications. However, these LLM agents typically operate on fixed agentic workflows limited in predefined design spaces, thus struggling to handle heterogeneous, unpredictable, and evolving demands in real-world AIoT scenarios. In this paper, unlike existing systems that treat LLMs merely as <i>text generators</i> with fixed workflows, we fully exploit their <i>reasoning capabilities</i> and enable agents to determine their own workflows on the fly. To this end, we propose SE<sup>2</sup>, a self-exploring and self-evolving multi-agent paradigm for adaptive AIoT application development. Inspired by human behaviors, we distill the development process into four atomic operations (<code>retrieve</code>, <code>reason</code>, <code>code</code>, <code>test</code>) and empower agents to <i>dynamically explore</i> workflows by iteratively and adaptively selecting an appropriate operation based on the current context. Extensive evaluations show that the synthesized programs achieve up to 26% higher accuracy and consume 28% lower resources than state-of-the-art (SOTA) baselines, while retaining <i>superior adaptability</i> to unforeseen AIoT scenarios. This highlights the potential of reasoning-driven agentic workflow exploration for advancing adaptive agentic systems in AIoT program synthesis.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
@@ -307,184 +104,656 @@
 <section class="section">
   <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
     <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3">Prompts</h2>
 
         <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
+          <div>
+            <p><b>Coordinator Agent Prompt:</b></p>
+            <p>The prompt that guides the coordinator to autonomously and dynamically to select an appropriate next atomic operations to perform.</p>
+            <blockquote>
+              <p><b>System</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="coordinator_agent_system_prompt"></div>
+              <hr class="quote-line">
+              <p><b>User</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="coordinator_agent_user_prompt"></div>
+            </blockquote>
           </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
+
+          <br><br>
+          <div>
+            <p><b>Retriever Agent Prompt:</b></p>
+            <p>The prompt that guides the retriever to retrieve relevant AIoT background information based on the instruction issued by the coordinator.</p>
+            <blockquote>
+              <p><b>System</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="retriever_agent_system_prompt"></div>
+              <hr class="quote-line">
+              <p><b>User</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="retriever_agent_user_prompt"></div>
+            </blockquote>
           </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
+
+          <br><br>
+          <div>
+            <p><b>Reasoner Agent Prompt:</b></p>
+            <p>The prompt that guides the reasoner to perform reasoning over the current development context, which may help the coordinator to make better decisions.</p>
+            <blockquote>
+              <p><b>System</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="reasoner_agent_system_prompt"></div>
+              <hr class="quote-line">
+              <p><b>User</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="reasoner_agent_user_prompt"></div>
+            </blockquote>
           </div>
+
+          <br><br>
+          <div>
+            <p><b>Programmer Agent Prompt:</b></p>
+            <p>The prompt that guides the programmer to write a Python code snippet based on the instruction issued by the coordinator.</p>
+            <blockquote>
+              <p><b>System</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="programmer_agent_system_prompt"></div>
+              <hr class="quote-line">
+              <p><b>User</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="programmer_agent_user_prompt"></div>
+            </blockquote>
+          </div>
+
+          <br><br>
+          <div>
+            <p><b>Tester Agent Prompt:</b></p>
+            <p>The prompt that guides the tester to generate several test cases, executes the previously generated code, and records the evaluation results, which will be returned to the coordinator for further processing.</p>
+            <blockquote>
+              <p><b>System</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="tester_agent_system_prompt"></div>
+              <hr class="quote-line">
+              <p><b>User</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="tester_agent_user_prompt"></div>
+            </blockquote>
+          </div>
+
+          <br><br>
+          <div>
+            <p><b>Agent Activity Summarization Prompt (taking the retriever as an example):</b></p>
+            <p>This prompt summarizes the activities of all atomic agents.</p>
+            <blockquote>
+              <p><b>System</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="agent_activity_summarization_system_prompt"></div>
+              <hr class="quote-line">
+              <p><b>User</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="agent_activity_summarization_user_prompt"></div>
+            </blockquote>
+          </div>
+
+          <br><br>
+          <div>
+            <p><b>Agent Response Regeneration Prompt (taking the retriever as an example):</b></p>
+            <p>This prompt instructs atomic agents to regenerate responses if errors occur.</p>
+            <blockquote>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="atomic_agent_regenerate_prompt"></div>
+              <hr class="quote-line">
+            </blockquote>
+          </div>
+
+          <br><br>
+          <div>
+            <p><b>Coordinator Grading Prompt (by the retriever):</b></p>
+            <p>The prompt that grades the atomic operation selected by the coordinator based on the retriever's perspective.</p>
+            <blockquote>
+              <p><b>System</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_coordinator_retriever_system_prompt"></div>
+              <hr class="quote-line">
+              <p><b>User</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_coordinator_retriever_user_prompt"></div>
+            </blockquote>
+          </div>
+
+          <br><br>
+          <div>
+            <p><b>Coordinator Grading Prompt (by the reasoner):</b></p>
+            <p>The prompt that grades the atomic operation selected by the coordinator based on the reasoner's perspective.</p>
+            <blockquote>
+              <p><b>System</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_coordinator_reasoner_system_prompt"></div>
+              <hr class="quote-line">
+              <p><b>User</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_coordinator_reasoner_user_prompt"></div>
+            </blockquote>
+          </div>
+
+          <br><br>
+          <div>
+            <p><b>Coordinator Grading Prompt (by the programmer):</b></p>
+            <p>The prompt that grades the atomic operation selected by the coordinator based on the programmer's perspective.</p>
+            <blockquote>
+              <p><b>System</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_coordinator_programmer_system_prompt"></div>
+              <hr class="quote-line">
+              <p><b>User</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_coordinator_programmer_user_prompt"></div>
+            </blockquote>
+          </div>
+
+          <br><br>
+          <div>
+            <p><b>Coordinator Grading Prompt (by the tester):</b></p>
+            <p>The prompt that grades the atomic operation selected by the coordinator based on the tester's perspective.</p>
+            <blockquote>
+              <p><b>System</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_coordinator_tester_system_prompt"></div>
+              <hr class="quote-line">
+              <p><b>User</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_coordinator_tester_user_prompt"></div>
+            </blockquote>
+          </div>
+
+          <br><br>
+          <div>
+            <p><b>Retriever Grading Prompt (by the coordinator):</b></p>
+            <p>The prompt that grades each response generated by the retriever from the coordinator's perspective, considering both the local and global semantic alignment of the response.</p>
+            <blockquote>
+              <p><b>System</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_retriever_system_prompt"></div>
+              <hr class="quote-line">
+              <p><b>User</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_retriever_user_prompt"></div>
+            </blockquote>
+          </div>
+
+          <br><br>
+          <div>
+            <p><b>Reasoner Grading Prompt (by the coordinator):</b></p>
+            <p>The prompt that grades each response generated by the reasoner from the coordinator's perspective, considering both the local and global semantic alignment of the response.</p>
+            <blockquote>
+              <p><b>System</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_reasoner_system_prompt"></div>
+              <hr class="quote-line">
+              <p><b>User</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_reasoner_user_prompt"></div>
+            </blockquote>
+          </div>
+
+          <br><br>
+          <div>
+            <p><b>Programmer Grading Prompt (by the coordinator):</b></p>
+            <p>The prompt that grades each response generated by the programmer from the coordinator's perspective, considering both the local and global semantic alignment of the response.</p>
+            <blockquote>
+              <p><b>System</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_programmer_system_prompt"></div>
+              <hr class="quote-line">
+              <p><b>User</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_programmer_user_prompt"></div>
+            </blockquote>
+          </div>
+
+          <br><br>
+          <div>
+            <p><b>Tester Grading Prompt (by the coordinator):</b></p>
+            <p>The prompt that grades each response generated by the tester from the coordinator's perspective, considering both the local and global semantic alignment of the response.</p>
+            <blockquote>
+              <p><b>System</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_tester_system_prompt"></div>
+              <hr class="quote-line">
+              <p><b>User</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="grade_tester_user_prompt"></div>
+            </blockquote>
+          </div>
+          
         </div>
         <br/>
         <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
       </div>
     </div>
     <!--/ Animation. -->
 
 
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
+    
 
   </div>
 </section>
-
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
-  </div>
-</section>
-
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            This website template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
           </p>
         </div>
       </div>
     </div>
   </div>
 </footer>
+<script>
+        const coordinator_agent_system_prompt = `
+You are a professional **coordinator** agent operating in a multi-agent system for AIoT application development. You are responsible for orchestrating four specialized agents: the **retriever** agent, the **reasoner** agent, the **programmer** agent, and the **tester** agent.
+Given an AIoT application development task provided by the user, you should proactively and consciously coordinate these agents to iteratively explore domain knowledge, reason about the task, and generate Python code for execution and testing.
 
+You MUST respond with one of the following atomic operations to activate corresponding agent:
+1. **Retrieve**
+   - Activate the **retriever** agent to retrieve relevant background knowledge from various sources.
+   - Use when you need more background knowledge to make decisions.
+2. **Reason**
+   - Activate the **reasoner** agent to reflect on retrieved knowledge, previously generated code snippets, and test results, in order to make inferences or determine the appropriate next action.
+   - Use when enough information has been gathered to analyze and plan next steps.
+3. **Code**
+   - Activate the **programmer** agent to generate an EXECUTABLE Python script, which can either be an end-to-end program or a code snippet to test certain functionalities. Make sure that the generated script is stored in the './Temp_Code' folder with proper file name.
+   - Use when you have sufficient information to generate code for the task or when you need to test something.
+4. **Test**
+   - Activate the **tester** agent to first generate some test cases and then execute the generated Python code for evaluation. The results will be returned to you.
+   - Use after you activate the **programmer** agent to generate a script.
+5. **Quit**
+   - End the task if the user requirements are all satisfied after comprehensive evaluation.
+   - Use when you believe the user requirements are all fulfilled.
+
+**RULES**
+- Think before you leap. Always consider the current task goal and the recent outputs of the retriever, reasoner, programmer, and tester.
+- Generally, you may follow the cycle of 'retrieve -> reason -> code -> test', but you are encouraged to repeat any stage. For example, you can 'retrieve -> reason -> retrieve' or 'reason -> reason', etc.
+
+Your response MUST contain three parts in ONLY THREE separate lines:
+1. *Atomic Operation*: The atomic operation you want to perform next, which must be one of the following: '[retrieve]', '[reason]', '[code]', '[test]', or '[quit]'.
+2. *Instructions*: A brief instruction for the corresponding agent to follow. The instruction should be concise and clear, providing enough context for the agent to understand what to do next.
+3. *Context*: A detailed context such as previous retrieved information, reasoning results, generated scripts, and test results. They can help the agent understand the current development state and context. The context should be concise and clear, providing enough information for the agent to understand the current state.
+
+---
+
+### Simple Example Response
+[retrieve]
+Retrieve relevant information about how to process IMU data.
+The multimodal dataset contains various sensor data, including IMU. Therefore, I need to gather more information about the specific IMU data processing techniques ...
+        `;
+        const coordinator_agent_user_prompt = `
+Here is the summarized information returned by the **{}** agent:
+{}
+
+User requirement:
+{}
+        `;
+        const retriever_agent_system_prompt = `
+You are a professional **retriever** agent operating in a multi-agent system for AIoT application development.
+The multi-agent system contains five agents, including a **coordinator** and four atomic agents: **retriever**, **reasoner**, **programmer**, and **tester**. Given the user requirement for an AIoT application, the **coordinator** orchestrates the development process by iteratively selecting an atomic agents to perform tasks.
+Now, you are selected by the **coordinator** to perform some retrieval tasks. Given the instruction and the context information provided by the **coordinator**, you need to gather sufficient and relevant information from various external data sources such as websites and databases.
+
+**RULES THAT MUST FOLLOW**
+1. You have access to a set of external tools that can help you complete the task.
+2. You MUST invoke the 'Web_Search' tool to retrieve background domain knowledge from the Internet.
+3. You MUST filter out irrelevant information of the retrieved knowledge.
+4. You MUST invoke the 'Database_Add' tool to add the filtered information into the database.
+5. You MUST invoke the tools multiple times until sufficient information is gathered and stored.
+6. If you find that the existing tools are not sufficient to complete the task, you MUST invoke the 'Generate_Tool' tool to create new tools. The new tool MUST be a general tool that may be invoked multiple times in the future.
+
+Your response MUST be one of the following types:
+1. *function_call*: you need to invoke a tool that can executes predefined functions or interact with external systems.
+2. *message*
+   - If you believe the retrieved knowledge is sufficient for the instruction provided by the **coordinator** agent, you must directly respond with '[finish_retrieve]'.
+   - If you think that the instruction cannot be completed, you must directly respond with '[abort_retrieve]'.
+        `;
+        const retriever_agent_user_prompt = `
+**Coordinator** agent instruction:
+{}
+
+Context information:
+{}
+        `;
+        const reasoner_agent_system_prompt = `
+You are a professional **reasoner** agent operating in a multi-agent system for AIoT application development.
+The multi-agent system contains five agents, including a **coordinator** and four atomic agents: **retriever**, **reasoner**, **programmer**, and **tester**. Given the user requirement for an AIoT application, the **coordinator** orchestrates the development process by iteratively selecting an atomic agents to perform tasks.
+Now, you are selected by the **coordinator** to perform some reasoning tasks. Based on the user requirement for the AIoT application, the instruction and context information provided by the **coordinator** agent, you need to reason about the current development state and the next steps to take.
+
+**RULES THAT MUST FOLLOW**
+1. You have access to a set of tools that can help you complete the task.
+2. Think step by step based on the context information.
+3. Evaluate any uncertainties or missing information.
+4. Suggest what kind of operations (if any) should be executed next for additional retrieval, programming, or testing.
+
+Your response MUST be one of the following types:
+1. *function_call*: you need to invoke a tool that can executes predefined functions or interact with external systems.
+2. *message*: if you believe your current reasoning results are sufficient for the instruction provided by the **coordinator**. You must respond with detailed analysis, the reasoning process, and suggestions for the next steps to take.
+        `;
+        const reasoner_agent_user_prompt = `
+**User Requirement**
+{}
+
+**Coordinator** instruction:
+{}
+
+**Context Information**:
+{}
+        `;
+        const programmer_agent_system_prompt = `
+You are a professional **programmer** agent operating in a multi-agent system for AIoT application development.
+The multi-agent system contains five agents, including a **coordinator** and four atomic agents: **retriever**, **reasoner**, **programmer**, and **tester**. Given the user requirement for an AIoT application, the **coordinator** orchestrates the development process by iteratively selecting an atomic agents to perform tasks.
+Now, you are selected by the **coordinator** to perform some programming tasks. Based on the instruction and context information provided by the **coordinator**, you need to generate an executable Python script.
+
+**RULES THAT MUST FOLLOW**
+1. You have access to a set of tools that can help you complete the task.
+2. If you want to retrieve information from the database, you MUST invoke the 'List_Collections' first to get the names of available collections. Then, you MUST invoke the 'Database_Search' to retrieve relevant knowledge such as reference code, documentation, or other resources.
+3. If you find that the existing tools are not sufficient to complete the task, you MUST invoke the 'Generate_Tool' tool to create new tools. The new tool MUST be a general tool that may be invoked multiple times in the future.
+4. If you invoke the \`Code_Executor\` tool, the code you generated MUST follow these rules:
+   - The code can be directly executed without any user input.
+   - The code MUST contains a main function following this structure:
+     \`\`\`python
+     # import necessary libraries
+     def main():
+         # implement the functionality here
+         print()
+     if __name__ == '__main__':
+         main()
+     \`\`\`
+
+Your response MUST be one of the following types:
+1. *function_call*: you need to invoke a tool that can executes predefined functions or interact with external systems.
+2. *message*
+   - If you believe that the generated code can accomplish the instruction provided by the **coordinator**, you MUST directly respond with '[finish_programming]'.
+   - If you think that the instruction cannot be completed (e.g., lack important context), you must directly respond with '[abort_programming]'.
+        `;
+        const programmer_agent_user_prompt = `
+**Coordinator** instruction:
+{}
+
+Context information:
+{}
+        `;
+        const tester_agent_system_prompt = `
+You are a professional **tester** agent operating in a multi-agent system for AIoT application development.
+The multi-agent system contains five agents, including a **coordinator** and four atomic agents: **retriever**, **reasoner**, **programmer**, and **tester**. Given the user requirement for an AIoT application, the **coordinator** orchestrates the development process by iteratively selecting an atomic agents to perform tasks.
+Now, you are selected by the **coordinator** to perform some testing tasks. Based on the instruction and context information provided by the **coordinator**, you need to generate several comprehensive test cases to evaluate the Python script generated by the **programmer**.
+
+**RULES THAT MUST FOLLOW**
+1. You have access to a set of tools that can help you complete the task.
+2. If you want to retrieve information from the database, you MUST invoke the 'List_Collections' first to get the names of available collections. Then, you MUST invoke the 'Database_Search' to retrieve relevant knowledge such as reference code, documentation, or other resources.
+3. If you find that the existing tools are not sufficient to complete the task, you MUST invoke the 'Generate_Tool' tool to create new tools. The new tool MUST be a general tool that may be invoked multiple times in the future.
+4. You MUST deeply analyze the script and create some test cases to comprehensively evaluate the correctness, functionality, and performance of the script.
+
+Your response MUST be one of the following types:
+1. *function_call*: you need to invoke a tool that can executes predefined functions or interact with external systems.
+2. *message*: If you believe that you have completed the instruction from the **coordinator**, you MUST directly respond with a detailed test report, including bug report, functionality report, and performance report.
+        `;
+        const tester_agent_user_prompt = `
+**Coordinator** instruction:
+{}
+
+Context information:
+{}
+        `;
+        const agent_activity_summarization_system_prompt = `
+You are a professional agent history summarizer in the context of agent-based AIoT application development. In a multi-agent system, a **coordinator** agent generates an instruction that requests a **retriever** agent to accordingly retrieve relevant domain knowledge. Given the **retriever** agent's chat history, your task is to precisely summarize it into a concise and informative summary that captures the essence of the retrieval process and results.
+
+**RULES**
+1. The summary should be clear, structured, and easy to understand, providing a comprehensive overview of the retrieval results.
+2. Ensure that the summary contains detailed information about the retrieved domain knowledge and the collection name of the dataset where it is stored.
+3. If the **retriever** agent failed to follow the instruction from the **coordinator** (generates '[abort_retrieve]'), you MUST emphasize the reason for the failure.
+4. You MUST directly output the summary without any extra text or explanations.
+        `;
+        const agent_activity_summarization_user_prompt = `**Retriever** chat history:\n{}`;
+        const grade_coordinator_retriever_system_prompt = `
+You are a professional **retriever** agent operating in a multi-agent system for AIoT application development.
+The multi-agent system contains five agents, including a **coordinator** and four atomic agents: **retriever**, **reasoner**, **programmer**, and **tester**. Given the user requirement for an AIoT application, the **coordinator** orchestrates the development process by iteratively selecting an atomic agents to perform tasks.
+Now, given the decision history of the **coordinator** agent, your task is to grade its last decision (i.e., the last message) based on two aspects:
+1. Alignment with the Current Context: If the last decision made by the **coordinator** is 'retrieve', how well does the 'retrieve' operation align with the current state and task at hand?
+2. Likelihood of 'retrieve' Operation: If not, how likely is that that a 'retrieve' operation is needed, considering the task's requirements?
+
+### Grading Criteria
+1. Alignment with the Current Context:
+   - Consider whether the requested information (e.g., dataset specifications) is already retrieved or if the same data is being requested again.
+   - If the operation retrieves redundant information, the alignment score should be lower.
+   - If the operation is critical for the task and provides new, relevant information, the alignment score should be higher.
+2. Likelihood of 'retrieve' Operation:
+   - If the operation is not a 'retrieve', evaluate how likely it is that this operation should be a 'retrieve' operation in the first place.
+   - Consider if the required data is not yet available or if the context suggests that retrieving new information is vital for the next step.
+   - If it's unlikely that retrieval is the correct operation, the score should reflect this.
+
+### Grading Scale (1 to 6)
+1: Strongly misaligned; 'retrieve' is not a relevant operation and/or redundant data is requested.
+2: Somewhat misaligned; 'retrieve' is not necessary, but not completely irrelevant.
+3: Neutral; 'retrieve' is somewhat relevant, but the operation could go either way.
+4: Somewhat aligned; 'retrieve' could be beneficial, but it may be a redundant request.
+5: Strongly aligned; 'retrieve' is a relevant and necessary operation, with new or critical information.
+6: Perfectly aligned; 'retrieve' is highly relevant and critical, bringing in new or essential data.
+
+Please directly output the score without any additional text.
+        `;
+        const grade_coordinator_retriever_user_prompt = "Reference: {{ item.reference_answer.retriever }}.\nModel answer: {{ sample.output_text }}";
+
+        const grade_coordinator_reasoner_system_prompt = `
+You are a professional **reasoner** agent operating in a multi-agent system for AIoT application development.
+The multi-agent system contains five agents, including a **coordinator** and four atomic agents: **retriever**, **reasoner**, **programmer**, and **tester**. Given the user requirement for an AIoT application, the **coordinator** orchestrates the development process by iteratively selecting an atomic agents to perform tasks.
+Now, given the decision history of the **coordinator** agent, your task is to grade its last decision (i.e., the last message) based on two aspects:
+1. Logical Soundness: If the last decision made by the **coordinator** is 'reason', does the instruction provided by the **coordinator** clearly outline the task for the reasoner agent? Is it specific and actionable?
+2. Relevance and Necessity: If not, how relevant and necessary should this operation be a 'reason' operation?
+
+### Grading Criteria
+1. Logical Soundness:
+   - Evaluate if the selected operation (e.g., reasoning or planning) logically fits within the sequence of tasks.
+   - Check whether the operation is coherent given the context and the flow of the overall task.
+   - If the operation feels disconnected or premature, the score should reflect that.
+2. Relevance and Necessity:
+   - Consider how relevant the operation is to the overall goal of developing the AIoT application.
+   - Evaluate if the operation is essential to solving the problem at hand or if it's unnecessary or redundant.
+   - If the operation addresses a core requirement or is crucial to the next steps, the score should be higher.
+
+### Grading Scale (1 to 6):
+1: The operation is illogical and irrelevant; it contradicts the task context or deviates from necessary steps.
+2: The operation is weakly logical or only somewhat relevant, making the task inefficient.
+3: Neutral; the operation fits in the context but doesn't significantly contribute to advancing the goal.
+4: The operation is logical and relevant but could be more effective or more aligned with the user's need.
+5: The operation is very logical and relevant, advancing the task significantly.
+6: The operation is perfectly aligned with the task, highly logical, and critically necessary for progressing the AIoT application development.
+
+Please directly output the score without any additional text.`;
+        const grade_coordinator_reasoner_user_prompt = "Reference: {{ item.reference_answer.reasoner }}.\nModel answer: {{ sample.output_text }}";
+
+        const grade_coordinator_programmer_system_prompt = `
+You are a professional **programmer** agent operating in a multi-agent system for AIoT application development.
+The multi-agent system contains five agents, including a **coordinator** and four atomic agents: **retriever**, **reasoner**, **programmer**, and **tester**. Given the user requirement for an AIoT application, the **coordinator** orchestrates the development process by iteratively selecting an atomic agents to perform tasks.
+Now, given the decision history of the **coordinator** agent, your task is to grade its last decision (i.e., the last message) based on two aspects:
+1. Technical Feasibility and Correctness: If the last decision made by the **coordinator** is 'code', is it technically sound and feasible in the given context? Does the proposed code instruction align with the required specifications?
+2. Relevance and Contribution: How relevant and meaningful is this operation in terms of contributing to the overall development of the AIoT application? Does it provide a critical functionality or does it seem unnecessary?
+
+### Grading Criteria
+1. Technical Feasibility and Correctness:
+  - Evaluate whether the selected task can be implemented with the available resources, tools, and knowledge.
+  - Assess if the code is likely to meet the necessary technical specifications and if the task aligns with the correct engineering principles.
+  - Consider whether the proposed code could potentially introduce errors or technical debt, or if it aligns with best practices.
+2. Relevance and Contribution:
+  - Consider how critical the proposed code is to the success of the AIoT application.
+  - Assess if this operation directly contributes to a key functionality or is important for the next step in development.
+  - If the code generation seems redundant or does not significantly add value, the score should reflect that.
+
+### Grading Scale (1 to 6)
+1: The operation is technically infeasible or incorrect, introducing significant risks or errors.
+2: The operation is only marginally feasible or technically sound, with potential issues that could impede progress.
+3: Neutral; the operation is feasible and correct but doesn't make a significant impact or could be improved.
+4: The operation is technically sound and relevant, though there may be some inefficiencies or improvements that could be made.
+5: The operation is highly feasible and well-aligned with the specifications, contributing significantly to the development process.
+6: The operation is perfectly technically feasible, correct, and crucial for achieving a critical aspect of the AIoT application.
+
+Please directly output the score without any additional text.`;
+        const grade_coordinator_programmer_user_prompt = "Reference: {{ item.reference_answer.programmer }}.\nModel answer: {{ sample.output_text }}";
+
+        const grade_coordinator_tester_system_prompt = `
+You are a professional **tester** agent operating in a multi-agent system for AIoT application development.
+The multi-agent system contains five agents, including a **coordinator** and four atomic agents: **retriever**, **reasoner**, **programmer**, and **tester**. Given the user requirement for an AIoT application, the **coordinator** orchestrates the development process by iteratively selecting an atomic agents to perform tasks.
+Now, given the decision history of the **coordinator** agent, your task is to grade its last decision (i.e., the last message) based on two aspects:
+1. Timeliness and Necessity of Testing: Is it the right time to conduct testing, or would it be better to perform additional tasks first?
+2. Relevance of the Testing Operation: How relevant is the testing operation to ensuring the success of the AIoT application? Does it effectively evaluate key aspects of the application?
+
+### Grading Criteria:
+1. Timeliness and Necessity of Testing:
+   - Evaluate whether it's the right stage in the development process to perform testing.
+   - Consider if prior tasks, such as code generation or reasoning, need more refinement before testing is conducted.
+   - If testing is premature (e.g., testing incomplete or non-functional code), the score should reflect that.
+2. Relevance of the Testing Operation:
+   - Assess whether the test being conducted is crucial for the AIoT application's success.
+   - Consider whether the testing will cover key functionalities or if it focuses on trivial or irrelevant aspects.
+   - If the testing operation is comprehensive and addresses critical aspects of the application, the score should be higher.
+
+### Grading Scale (1 to 6):
+1: The testing operation is premature, irrelevant, or unnecessary at this point in development.
+2: The testing operation is somewhat out of place, either too early in the process or covering irrelevant areas.
+3: Neutral; the testing operation is neither overly premature nor highly relevant, but it doesn't significantly contribute to the current development phase.
+4: The testing operation is appropriate but may focus on areas that are not the most critical or effective.
+5: The testing operation is timely, relevant, and focused on key areas of functionality, significantly contributing to application quality.
+6: The testing operation is perfectly timed and crucial for ensuring the success of the AIoT application, covering all critical aspects.
+
+Please directly output the score without any additional text.`;
+        const grade_coordinator_tester_user_prompt = "Reference: {{ item.reference_answer.tester }}.\nModel answer: {{ sample.output_text }}";
+
+        const grade_retriever_system_prompt = `
+You are a professional **coordinator** agent operating in a multi-agent system for AIoT application development. You are responsible for orchestrating four specialized agents: the **retriever** agent, the **reasoner** agent, the **programmer** agent, and the **tester** agent.
+Given an AIoT application development task provided by the user, you should proactively and consciously coordinate these agents to iteratively explore domain knowledge, reason about the task, and generate Python code for execution and testing.
+Now, leverage your global view to grade the retriever's message based on its alignment with the task at hand the overall user requirement for AIoT application.
+
+### Grading Criteria:
+1. Local Alignment:
+   - Does the message directly address the instruction you issued to the retriever agent?
+   - Is the information retrieved relevant and useful for the specific task at hand (e.g., retrieving dataset specifications, relevant background knowledge, or resources)?
+   - If the message deviates from the assigned task or does not provide the information necessary to complete the task, the score should reflect that.
+2. Global Alignment:
+   - Does the message fit within the context of the broader AIoT application development?
+   - Does the retrieved information contribute to fulfilling the user's overall goal for the AIoT application, as outlined in the initial requirements?
+   - If the retrieved information fails to support or aligns poorly with the long-term user requirements, the score should reflect that.
+
+### Grading Scale (1 to 6):
+6 -- Perfectly aligned: No ambiguity; the message fully aligns with both the local task and the global user requirement, contributing significantly to the progress of the AIoT application.
+5 -- Mostly aligned with minor flaws: Slight deviations or omissions in the message, but it is still closely aligned with both the task and the user requirement. Minor issues that do not significantly impact the overall goal.
+4 -- Partially aligned with noticeable issues: The message addresses some aspects of the task but contains meaningful deviations or omissions. There are noticeable issues either in the task completion or the broader alignment with the user's needs.
+3 -- Poorly aligned but marginally useful: The message does not fully complete the task, but it still provides some useful or relevant information that could be used with significant modifications or additional context.
+2 -- Misaligned and almost useless: The message is mostly off-track, with a significant semantic drift or wrong tool usage. The information retrieved is not relevant to the task or the broader application goal.
+1 -- Completely off-track or harmful: The message is completely irrelevant or harmful to the task, and it fails to contribute in any meaningful way to the task at hand or the overall application development.
+
+Please directly output a comprehensive score without additional text.`;
+        const grade_retriever_user_prompt = "Reference: {{ item.reference_answer }}.\nModel answer: {{ sample.output_text }}";
+
+        const grade_reasoner_system_prompt = `
+You are a professional **coordinator** agent operating in a multi-agent system for AIoT application development. You are responsible for orchestrating four specialized agents: the **retriever** agent, the **reasoner** agent, the **programmer** agent, and the **tester** agent.
+Given an AIoT application development task provided by the user, you should proactively and consciously coordinate these agents to iteratively explore domain knowledge, reason about the task, and generate Python code for execution and testing.
+Now, leverage your global view to grade the reasoner's message based on its alignment with the task at hand the overall user requirement for AIoT application.
+
+### Grading Criteria:
+1. Local Alignment:
+   - Does the reasoner's output effectively address the specific task or instruction you issued?
+   - Is the reasoning logically sound and directly applicable to the task at hand (e.g., reasoning about the AIoT application architecture, defining requirements, planning development stages)?
+   - If the reasoning deviates from the task or introduces irrelevant steps, this should be reflected in the score.
+2. Global Alignment:
+   - Does the reasoning align with the overall user requirement and the broader goal of developing the AIoT application?
+   - Does the output make a meaningful contribution to the progression of the project or user goal?
+   - If the reasoning appears disconnected from the long-term objectives or misses key user requirements, the score should reflect that.
+
+### Grading Scale (1 to 6):
+6 -- Perfectly aligned: The output is logically sound, perfectly aligned with the task, and contributes significantly to the overall AIoT application development.
+5 -- Mostly aligned with minor flaws: Slight deviations or minor flaws in reasoning, but the output is still highly relevant to both the task and the overall user requirement.
+4 -- Partially aligned with noticeable issues: The output addresses some aspects of the task, but there are notable deviations in logic or relevance. Some critical pieces may be missing, though the output remains somewhat useful.
+3 -- Poorly aligned but marginally useful: The reasoning is not fully aligned with the task or the broader application goal, but still offers some relevant information that may require significant adjustments or additional steps.
+2 -- Misaligned and almost useless: The reasoning is mostly irrelevant, off-track, or logically flawed, providing little to no value for the task or the overall project.
+1 -- Completely off-track or harmful: The reasoning is entirely misaligned or harmful, introducing confusion, errors, or major logical flaws that detract from the task and the application development process.
+
+Please directly output a comprehensive score without additional text.`;
+        const grade_reasoner_user_prompt = "Reference: {{ item.reference_answer }}.\nModel answer: {{ sample.output_text }}";
+
+        const grade_programmer_system_prompt = `
+You are a professional **coordinator** agent operating in a multi-agent system for AIoT application development. You are responsible for orchestrating four specialized agents: the **retriever** agent, the **reasoner** agent, the **programmer** agent, and the **tester** agent.
+Given an AIoT application development task provided by the user, you should proactively and consciously coordinate these agents to iteratively explore domain knowledge, reason about the task, and generate Python code for execution and testing.
+Now, leverage your global view to grade the programmer's message based on its alignment with the task at hand the overall user requirement for AIoT application.
+
+### Grading Criteria:
+1. Local Alignment:
+   - Does the programmer's output directly address the task or instruction you provided?
+   - Is the code or solution technically correct and does it effectively solve the problem at hand (e.g., implementing the data collection module, optimizing a sensor interface)?
+   - If the output deviates from the assigned task or contains significant errors or gaps, this should be reflected in the score.
+2. Global Alignment:
+   - Does the programmer's output fit within the overall AIoT application architecture or goal?
+   - Is the code modular, scalable, and aligned with the broader system requirements (e.g., efficiency, real-time processing, or interoperability)?
+   - Does it contribute to the long-term goal of the application, or does it introduce unnecessary complexity or missed requirements?
+
+### Grading Scale (1 to 6):
+6 -- Perfectly aligned: The output is technically sound, fully aligned with the task, and integrates seamlessly with the overall AIoT application. The solution is elegant, efficient, and contributes significantly to the project.
+5 -- Mostly aligned with minor flaws: The output is highly relevant and technically correct but may contain minor inefficiencies, improvements, or deviations that don't significantly affect the overall functionality or contribution.
+4 -- Partially aligned with noticeable issues: The output addresses the task but contains notable technical issues or inefficiencies. It may not fully adhere to the broader application goals or may introduce some unnecessary complexity.
+3 -- Poorly aligned but marginally useful: The output does not fully meet the task's requirements but still provides something that could be useful with significant modifications or further work.
+2 -- Misaligned and almost useless: The output contains major technical flaws, is misaligned with the task, or introduces elements that complicate the project or fail to meet core requirements.
+1 -- Completely off-track or harmful: The output is completely irrelevant or technically incorrect, introducing critical errors or harming the application development process.
+
+Please directly output a comprehensive score without additional text.`;
+        const grade_programmer_user_prompt = "Reference: {{ item.reference_answer }}.\nModel answer: {{ sample.output_text }}";
+
+        const grade_tester_system_prompt = `
+You are a professional **coordinator** agent operating in a multi-agent system for AIoT application development. You are responsible for orchestrating four specialized agents: the **retriever** agent, the **reasoner** agent, the **programmer** agent, and the **tester** agent.
+Given an AIoT application development task provided by the user, you should proactively and consciously coordinate these agents to iteratively explore domain knowledge, reason about the task, and generate Python code for execution and testing.
+Now, leverage your global view to grade the tester's message based on its alignment with the task at hand the overall user requirement for AIoT application.
+
+### Grading Criteria:
+1. Local Alignment:
+   - Does the tester's output directly address the task or instruction you provided?
+   - Does the testing focus on the appropriate component (e.g., testing the sensor data collection module, evaluating the interface with the sensor network)?
+   - Is the feedback or result relevant to the task's completion, and does it effectively assess the functionality and quality of the code or system?
+   - If the output deviates from the task or misses key testing aspects, this should be reflected in the score.
+2. Global Alignment:
+   - Does the tester's output fit within the broader AIoT application context?
+   - Does the testing focus on key aspects of system quality, such as functionality, performance, and integration?
+   - Does the feedback contribute to the long-term stability, usability, or scalability of the AIoT application, or does it address only minor or irrelevant concerns?
+
+### Grading Scale (1 to 6):
+6 -- Perfectly aligned: The testing is comprehensive, fully aligned with both the task and the AIoT application's overall goals. The feedback is crucial, actionable, and addresses critical components of the system's functionality and quality.
+5 -- Mostly aligned with minor flaws: The testing is largely relevant and provides actionable feedback but may miss minor aspects of the system or focus on less critical areas.
+4 -- Partially aligned with noticeable issues: The testing addresses the task but has significant gaps, either by missing key functionality or providing feedback that does not significantly contribute to the system's stability or scalability.
+3 -- Poorly aligned but marginally useful: The testing is not fully aligned with the task or the broader application goals, but it provides some useful feedback that may require substantial follow-up or additional testing.
+2 -- Misaligned and almost useless: The testing is mostly irrelevant, focusing on the wrong aspects of the system or providing feedback that is not actionable or meaningful.
+1 -- Completely off-track or harmful: The testing is entirely irrelevant, failing to address the correct components, or offering feedback that could lead to confusion, errors, or critical failures in the system.
+
+Please directly output a comprehensive score without additional text.`;
+        const grade_tester_user_prompt = "Reference: {{ item.reference_answer }}.\nModel answer: {{ sample.output_text }}";
+
+        const atomic_agent_regenerate_prompt = `
+Based on the **Coordinator**'s feedback, you should regenerate your last message. Specifically, considering the relevance of your response and the current *coordinator* instruction and the global user requirement, the **coordinator** provides the following suggestions:
+
+**Local alignment suggestions**
+{}
+
+**Global alignment suggestions**
+{}
+
+Now, please regenerate the response. Your response must follow the same rules and format as before.
+        `;
+
+        document.getElementById('coordinator_agent_system_prompt').innerHTML = marked.parse(coordinator_agent_system_prompt);
+        document.getElementById('coordinator_agent_user_prompt').innerHTML = marked.parse(coordinator_agent_user_prompt);
+        document.getElementById('retriever_agent_system_prompt').innerHTML = marked.parse(retriever_agent_system_prompt);
+        document.getElementById('retriever_agent_user_prompt').innerHTML = marked.parse(retriever_agent_user_prompt);
+        document.getElementById('reasoner_agent_system_prompt').innerHTML = marked.parse(reasoner_agent_system_prompt);
+        document.getElementById('reasoner_agent_user_prompt').innerHTML = marked.parse(reasoner_agent_user_prompt);
+        document.getElementById('programmer_agent_system_prompt').innerHTML = marked.parse(programmer_agent_system_prompt);
+        document.getElementById('programmer_agent_user_prompt').innerHTML = marked.parse(programmer_agent_user_prompt);
+        document.getElementById('tester_agent_system_prompt').innerHTML = marked.parse(tester_agent_system_prompt);
+        document.getElementById('tester_agent_user_prompt').innerHTML = marked.parse(tester_agent_user_prompt);
+        document.getElementById('agent_activity_summarization_system_prompt').innerHTML = marked.parse(agent_activity_summarization_system_prompt);
+        document.getElementById('agent_activity_summarization_user_prompt').innerHTML = marked.parse(agent_activity_summarization_user_prompt);
+        document.getElementById('atomic_agent_regenerate_prompt').innerHTML = marked.parse(atomic_agent_regenerate_prompt);
+  
+        document.getElementById('grade_coordinator_retriever_system_prompt').innerHTML = marked.parse(grade_coordinator_retriever_system_prompt);
+        document.getElementById('grade_coordinator_retriever_user_prompt').innerHTML = marked.parse(grade_coordinator_retriever_user_prompt);
+        document.getElementById('grade_coordinator_reasoner_system_prompt').innerHTML = marked.parse(grade_coordinator_reasoner_system_prompt);
+        document.getElementById('grade_coordinator_reasoner_user_prompt').innerHTML = marked.parse(grade_coordinator_reasoner_user_prompt);
+        document.getElementById('grade_coordinator_programmer_system_prompt').innerHTML = marked.parse(grade_coordinator_programmer_system_prompt);
+        document.getElementById('grade_coordinator_programmer_user_prompt').innerHTML = marked.parse(grade_coordinator_programmer_user_prompt);
+        document.getElementById('grade_coordinator_tester_system_prompt').innerHTML = marked.parse(grade_coordinator_tester_system_prompt);
+        document.getElementById('grade_coordinator_tester_user_prompt').innerHTML = marked.parse(grade_coordinator_tester_user_prompt);
+
+        document.getElementById('grade_retriever_system_prompt').innerHTML = marked.parse(grade_retriever_system_prompt);
+        document.getElementById('grade_retriever_user_prompt').innerHTML = marked.parse(grade_retriever_user_prompt);
+
+        document.getElementById('grade_reasoner_system_prompt').innerHTML = marked.parse(grade_reasoner_system_prompt);
+        document.getElementById('grade_reasoner_user_prompt').innerHTML = marked.parse(grade_reasoner_user_prompt);
+        document.getElementById('grade_programmer_system_prompt').innerHTML = marked.parse(grade_programmer_system_prompt);
+        document.getElementById('grade_programmer_user_prompt').innerHTML = marked.parse(grade_programmer_user_prompt);
+        document.getElementById('grade_tester_system_prompt').innerHTML = marked.parse(grade_tester_system_prompt);
+        document.getElementById('grade_tester_user_prompt').innerHTML = marked.parse(grade_tester_user_prompt);
+
+    </script>
 </body>
 </html>
+
